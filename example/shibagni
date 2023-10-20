@@ -1,0 +1,12 @@
+def is_palindrome(input_string):
+    # Remove spaces and convert the string to lowercase for case-insensitive comparison
+    input_string = input_string.replace(" ", "").lower()
+    
+    # Compare the string with its reverse
+    return input_string == input_string[::-1]
+
+# Example usage:
+test_string1 = "racecar"
+test_string2 = "hello"
+print(is_palindrome(test_string1))  # This will print True
+print(is_palindrome(test_string2))  # This will print False
